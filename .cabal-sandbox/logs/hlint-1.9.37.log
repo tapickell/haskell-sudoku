@@ -1,0 +1,59 @@
+Configuring hlint-1.9.37...
+Building hlint-1.9.37...
+Preprocessing library hlint-1.9.37...
+[ 1 of 46] Compiling Test.Util        ( src/Test/Util.hs, dist/dist-sandbox-b2469d70/build/Test/Util.o )
+[ 2 of 46] Compiling Test.InputOutput ( src/Test/InputOutput.hs, dist/dist-sandbox-b2469d70/build/Test/InputOutput.o )
+[ 3 of 46] Compiling HSE.Type         ( src/HSE/Type.hs, dist/dist-sandbox-b2469d70/build/HSE/Type.o )
+[ 4 of 46] Compiling HSE.FreeVars     ( src/HSE/FreeVars.hs, dist/dist-sandbox-b2469d70/build/HSE/FreeVars.o )
+[ 5 of 46] Compiling HSE.Util         ( src/HSE/Util.hs, dist/dist-sandbox-b2469d70/build/HSE/Util.o )
+[ 6 of 46] Compiling HSE.Match        ( src/HSE/Match.hs, dist/dist-sandbox-b2469d70/build/HSE/Match.o )
+[ 7 of 46] Compiling HSE.Scope        ( src/HSE/Scope.hs, dist/dist-sandbox-b2469d70/build/HSE/Scope.o )
+[ 8 of 46] Compiling HsColour         ( src/HsColour.hs, dist/dist-sandbox-b2469d70/build/HsColour.o )
+[ 9 of 46] Compiling Parallel         ( src/Parallel.hs, dist/dist-sandbox-b2469d70/build/Parallel.o )
+[10 of 46] Compiling Paths_hlint      ( dist/dist-sandbox-b2469d70/build/autogen/Paths_hlint.hs, dist/dist-sandbox-b2469d70/build/Paths_hlint.o )
+[11 of 46] Compiling Util             ( src/Util.hs, dist/dist-sandbox-b2469d70/build/Util.o )
+[12 of 46] Compiling CmdLine          ( src/CmdLine.hs, dist/dist-sandbox-b2469d70/build/CmdLine.o )
+[13 of 46] Compiling HSE.Bracket      ( src/HSE/Bracket.hs, dist/dist-sandbox-b2469d70/build/HSE/Bracket.o )
+[14 of 46] Compiling HSE.Evaluate     ( src/HSE/Evaluate.hs, dist/dist-sandbox-b2469d70/build/HSE/Evaluate.o )
+[15 of 46] Compiling HSE.All          ( src/HSE/All.hs, dist/dist-sandbox-b2469d70/build/HSE/All.o )
+[16 of 46] Compiling Settings         ( src/Settings.hs, dist/dist-sandbox-b2469d70/build/Settings.o )
+[17 of 46] Compiling Idea             ( src/Idea.hs, dist/dist-sandbox-b2469d70/build/Idea.o )
+[18 of 46] Compiling Report           ( src/Report.hs, dist/dist-sandbox-b2469d70/build/Report.o )
+[19 of 46] Compiling Test.Proof       ( src/Test/Proof.hs, dist/dist-sandbox-b2469d70/build/Test/Proof.o )
+[20 of 46] Compiling Refact           ( src/Refact.hs, dist/dist-sandbox-b2469d70/build/Refact.o )
+[21 of 46] Compiling Hint.Type        ( src/Hint/Type.hs, dist/dist-sandbox-b2469d70/build/Hint/Type.o )
+[22 of 46] Compiling Hint.List        ( src/Hint/List.hs, dist/dist-sandbox-b2469d70/build/Hint/List.o )
+[23 of 46] Compiling Hint.Monad       ( src/Hint/Monad.hs, dist/dist-sandbox-b2469d70/build/Hint/Monad.o )
+[24 of 46] Compiling Hint.Bracket     ( src/Hint/Bracket.hs, dist/dist-sandbox-b2469d70/build/Hint/Bracket.o )
+[25 of 46] Compiling Hint.Naming      ( src/Hint/Naming.hs, dist/dist-sandbox-b2469d70/build/Hint/Naming.o )
+[26 of 46] Compiling Hint.Pattern     ( src/Hint/Pattern.hs, dist/dist-sandbox-b2469d70/build/Hint/Pattern.o )
+[27 of 46] Compiling Hint.Import      ( src/Hint/Import.hs, dist/dist-sandbox-b2469d70/build/Hint/Import.o )
+[28 of 46] Compiling Hint.Pragma      ( src/Hint/Pragma.hs, dist/dist-sandbox-b2469d70/build/Hint/Pragma.o )
+[29 of 46] Compiling Hint.Extensions  ( src/Hint/Extensions.hs, dist/dist-sandbox-b2469d70/build/Hint/Extensions.o )
+[30 of 46] Compiling Hint.Duplicate   ( src/Hint/Duplicate.hs, dist/dist-sandbox-b2469d70/build/Hint/Duplicate.o )
+[31 of 46] Compiling Hint.Comment     ( src/Hint/Comment.hs, dist/dist-sandbox-b2469d70/build/Hint/Comment.o )
+[32 of 46] Compiling Hint.Unsafe      ( src/Hint/Unsafe.hs, dist/dist-sandbox-b2469d70/build/Hint/Unsafe.o )
+[33 of 46] Compiling Hint.Util        ( src/Hint/Util.hs, dist/dist-sandbox-b2469d70/build/Hint/Util.o )
+[34 of 46] Compiling Hint.ListRec     ( src/Hint/ListRec.hs, dist/dist-sandbox-b2469d70/build/Hint/ListRec.o )
+[35 of 46] Compiling Test.Translate   ( src/Test/Translate.hs, dist/dist-sandbox-b2469d70/build/Test/Translate.o )
+[36 of 46] Compiling Hint.Match       ( src/Hint/Match.hs, dist/dist-sandbox-b2469d70/build/Hint/Match.o )
+[37 of 46] Compiling Hint.Lambda      ( src/Hint/Lambda.hs, dist/dist-sandbox-b2469d70/build/Hint/Lambda.o )
+[38 of 46] Compiling Hint.All         ( src/Hint/All.hs, dist/dist-sandbox-b2469d70/build/Hint/All.o )
+[39 of 46] Compiling Apply            ( src/Apply.hs, dist/dist-sandbox-b2469d70/build/Apply.o )
+[40 of 46] Compiling Language.Haskell.HLint2 ( src/Language/Haskell/HLint2.hs, dist/dist-sandbox-b2469d70/build/Language/Haskell/HLint2.o )
+[41 of 46] Compiling Grep             ( src/Grep.hs, dist/dist-sandbox-b2469d70/build/Grep.o )
+[42 of 46] Compiling Test.Annotations ( src/Test/Annotations.hs, dist/dist-sandbox-b2469d70/build/Test/Annotations.o )
+[43 of 46] Compiling Test.All         ( src/Test/All.hs, dist/dist-sandbox-b2469d70/build/Test/All.o )
+[44 of 46] Compiling HLint            ( src/HLint.hs, dist/dist-sandbox-b2469d70/build/HLint.o )
+[45 of 46] Compiling Language.Haskell.HLint ( src/Language/Haskell/HLint.hs, dist/dist-sandbox-b2469d70/build/Language/Haskell/HLint.o )
+[46 of 46] Compiling Language.Haskell.HLint3 ( src/Language/Haskell/HLint3.hs, dist/dist-sandbox-b2469d70/build/Language/Haskell/HLint3.o )
+Preprocessing executable 'hlint' for hlint-1.9.37...
+[1 of 1] Compiling Main             ( src/Main.hs, dist/dist-sandbox-b2469d70/build/hlint/hlint-tmp/Main.o )
+Linking dist/dist-sandbox-b2469d70/build/hlint/hlint ...
+Creating package registration file:
+/var/folders/hp/96vtgb35725d87_gbwlspb5m0000gn/T/pkgConf-hlint-1.911909597451912844175.37
+Installing library in
+/Users/toddpickell/code/sudoku-haskell/.cabal-sandbox/lib/x86_64-osx-ghc-8.0.1/hlint-1.9.37-FuLTPOrMQMd0RpmnXHsPKp
+Installing executable(s) in
+/Users/toddpickell/code/sudoku-haskell/.cabal-sandbox/bin
+Registering hlint-1.9.37...

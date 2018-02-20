@@ -1,0 +1,16 @@
+Configuring hashable-1.2.4.0...
+Building hashable-1.2.4.0...
+Preprocessing library hashable-1.2.4.0...
+[1 of 3] Compiling Data.Hashable.Class ( Data/Hashable/Class.hs, dist/dist-sandbox-b2469d70/build/Data/Hashable/Class.o )
+
+Data/Hashable/Class.hs:460:28: warning: [-Wdeprecations]
+    In the use of ‘inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+[2 of 3] Compiling Data.Hashable.Generic ( Data/Hashable/Generic.hs, dist/dist-sandbox-b2469d70/build/Data/Hashable/Generic.o )
+[3 of 3] Compiling Data.Hashable    ( Data/Hashable.hs, dist/dist-sandbox-b2469d70/build/Data/Hashable.o )
+Creating package registration file:
+/var/folders/hp/96vtgb35725d87_gbwlspb5m0000gn/T/pkgConf-hashable-1.2.416353394251654001669.0
+Installing library in
+/Users/toddpickell/code/sudoku-haskell/.cabal-sandbox/lib/x86_64-osx-ghc-8.0.1/hashable-1.2.4.0-EAVc7xBptZP3ITTFK2gthd
+Registering hashable-1.2.4.0...

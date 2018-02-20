@@ -1,0 +1,25 @@
+Configuring extra-1.5...
+Building extra-1.5...
+Preprocessing library extra-1.5...
+[ 1 of 17] Compiling System.Info.Extra ( src/System/Info/Extra.hs, dist/dist-sandbox-b2469d70/build/System/Info/Extra.o )
+[ 2 of 17] Compiling System.Environment.Extra ( src/System/Environment/Extra.hs, dist/dist-sandbox-b2469d70/build/System/Environment/Extra.o )
+[ 3 of 17] Compiling Numeric.Extra    ( src/Numeric/Extra.hs, dist/dist-sandbox-b2469d70/build/Numeric/Extra.o )
+[ 4 of 17] Compiling Data.Typeable.Extra ( src/Data/Typeable/Extra.hs, dist/dist-sandbox-b2469d70/build/Data/Typeable/Extra.o )
+[ 5 of 17] Compiling Data.Tuple.Extra ( src/Data/Tuple/Extra.hs, dist/dist-sandbox-b2469d70/build/Data/Tuple/Extra.o )
+[ 6 of 17] Compiling Data.List.Extra  ( src/Data/List/Extra.hs, dist/dist-sandbox-b2469d70/build/Data/List/Extra.o )
+[ 7 of 17] Compiling Data.Version.Extra ( src/Data/Version/Extra.hs, dist/dist-sandbox-b2469d70/build/Data/Version/Extra.o )
+[ 8 of 17] Compiling Data.IORef.Extra ( src/Data/IORef/Extra.hs, dist/dist-sandbox-b2469d70/build/Data/IORef/Extra.o )
+[ 9 of 17] Compiling Data.Either.Extra ( src/Data/Either/Extra.hs, dist/dist-sandbox-b2469d70/build/Data/Either/Extra.o )
+[10 of 17] Compiling Control.Monad.Extra ( src/Control/Monad/Extra.hs, dist/dist-sandbox-b2469d70/build/Control/Monad/Extra.o )
+[11 of 17] Compiling System.Directory.Extra ( src/System/Directory/Extra.hs, dist/dist-sandbox-b2469d70/build/System/Directory/Extra.o )
+[12 of 17] Compiling Control.Exception.Extra ( src/Control/Exception/Extra.hs, dist/dist-sandbox-b2469d70/build/Control/Exception/Extra.o )
+[13 of 17] Compiling System.Time.Extra ( src/System/Time/Extra.hs, dist/dist-sandbox-b2469d70/build/System/Time/Extra.o )
+[14 of 17] Compiling Control.Concurrent.Extra ( src/Control/Concurrent/Extra.hs, dist/dist-sandbox-b2469d70/build/Control/Concurrent/Extra.o )
+[15 of 17] Compiling System.IO.Extra  ( src/System/IO/Extra.hs, dist/dist-sandbox-b2469d70/build/System/IO/Extra.o )
+[16 of 17] Compiling System.Process.Extra ( src/System/Process/Extra.hs, dist/dist-sandbox-b2469d70/build/System/Process/Extra.o )
+[17 of 17] Compiling Extra            ( src/Extra.hs, dist/dist-sandbox-b2469d70/build/Extra.o )
+Creating package registration file:
+/var/folders/hp/96vtgb35725d87_gbwlspb5m0000gn/T/pkgConf-extra-11108728549685118024.5
+Installing library in
+/Users/toddpickell/code/sudoku-haskell/.cabal-sandbox/lib/x86_64-osx-ghc-8.0.1/extra-1.5-0xESeu5i1K8Jhl8wN7CF4u
+Registering extra-1.5...

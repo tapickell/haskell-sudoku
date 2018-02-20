@@ -9,7 +9,6 @@ data Cell = FilledCell { location :: Coor
                        } |
             EmptyCell { location :: Coor } deriving (Show)
 
--- Matrix = Matrix
 
 
 -- still needs to be defined what completed means
@@ -17,26 +16,36 @@ data Cell = FilledCell { location :: Coor
 completed :: Matrix -> Bool
 completed board = true
 
-row :: (Int a) => Coor -> Matrix -> [a]
-row (Coor {row=r, col=c}) board = getRow r board
 
-column :: (Int a) => Coor -> Matrix -> [a]
-column (Coor {row=r, col=c}) board = getCol c board
+rowNumbers :: Coor -> Matrix -> [a]
+rowNumbers Coor {row=r, col=c} = getRow r
 
-sector :: (Int a) => Coor -> Matrix -> [a]
-sector (Coor {row=r, col=c}) board = True
+columnNumbers :: Coor -> Matrix -> [a]
+columnNumbers Coor {row=r, col=c} = getCol c
+
+sector :: Coor -> Matrix -> [a]
+sector Coor {row=r, col=c} board = True
 -- determine submatrix for coor
 -- return submatrix
 
-getSec :: Int -> Int -> Matrix
+-- wish this was cleaner | smaller
+-- if row [1..3] then submatrix( 1 3 _ _)
+-- if col [1..3] then submatrix( _ _ 1 3)
+-- abc = [1,3]; def = [4,6]; ghi = [7,9]
+-- rowMap = [abc, abc, abc, def, def, def, ghi, ghi, ghi]
+-- adg = abc; beh = def; cfi = ghi
+-- colMap = [adg, adg, adg, beh, beh, beh, cfi, cfi, cfi]
+-- [1, 3] = rowSub 2
+-- [1, 3] = colSub 3
+getSec :: Int -> Int -> Matrix -> Matrix
 getSec row col board
   | sectorA = toList(submatrix 1 3 1 3)
   | sectorB = toList(submatrix 1 3 4 6)
-  | sectorC = toList(submatrix 4 6 1 3)
-  | sectorD = toList(submatrix 4 6 4 6)
-  | sectorE = toList(submatrix 4 6 7 9)
-  | sectorF = toList(submatrix 7 9 1 3)
-  | sectorG = toList(submatrix 7 9 4 6)
+  | sectorC = toList(submatrix 1 3 7 9)
+  | sectorD = toList(submatrix 4 6 1 3)
+  | sectorE = toList(submatrix 4 6 4 6)
+  | sectorF = toList(submatrix 4 6 7 9)
+  | sectorG = toList(submatrix 7 9 1 3)
   | sectorH = toList(submatrix 7 9 4 6)
   | sectorI = toList(submatrix 7 9 7 9)
   where sectorA = elem row [1..3] && elem col [1..3]
@@ -45,10 +54,10 @@ getSec row col board
       -- [1..3] [4..6] [7..9]
 
 cellAt :: Coor -> Matrix -> Cell
-cellAt (Coor {row=r, col=c}) board = getElem r c board
+cellAt Coor {row=r, col=c} = getElem r c
 
 nextCoor :: Coor -> Coor
-nextCoor (Coor {row=r, col=c})
+nextCoor Coor {row=r, col=c}
   | notAtEnd = Coor r c+1
   | endOfCol = Coor r+1 1
   | otherwise = Coor r c
@@ -56,15 +65,15 @@ nextCoor (Coor {row=r, col=c})
         endOfCol = r < 9 && c >= 9
 
 prevCoor :: Coor -> Coor
-prevCoor (Coor {row=r, col=c}) =
+prevCoor Coor {row=r, col=c}
   | notAtBeg = Coor r c-1
   | begOfCol = Coor r-1 9
   | otherwise = Coor r c
   where notAtBeg = r <= 9 && c > 1
         begOfCol = r > 1 && c <= 1
 
-numbersAvail :: (Int a) => Coor -> Matrix -> [a]
-numbersAvail (Coor {row=r, col=c}) board =
+numbersAvail :: Coor -> Matrix -> [a]
+numbersAvail Coor {row=r, col=c} board =
   let rows = getRow r board
       cols = getCol c board
       secs = getSec r c board
@@ -75,13 +84,13 @@ numbersAvail (Coor {row=r, col=c}) board =
 -- this can work with random later
 -- random index of as
 valueFromAvail :: [Int] -> Int
-valueFromAvail [a|as] = a
+valueFromAvail (a:as) = a
 
 coorTuple :: Coor -> (Int, Int)
-coorTuple (Coor {row=r, col=c}) = (r, c)
+coorTuple Coor {row=r, col=c} = (r, c)
 
-addCell :: FilledCell -> Matrix -> Matrix
-addCell (FilledCell {location=coor, value=v, tried=ts, avail=as}) board
+addCell :: Cell -> Matrix -> Matrix
+addCell FilledCell {location=coor, value=v, tried=ts, avail=as} board
   | competed board = board
 -- move to next while adding to board for recursion
   | canAddCell = addCell FilledCell { location=(nextCoor coor)

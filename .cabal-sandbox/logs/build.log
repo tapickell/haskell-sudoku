@@ -1,0 +1,232 @@
+
+package: loop-0.3.0
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: matrix-0.3.5.0
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: vector-0.11.0.0 primitive-0.6.1.0 loop-0.3.0
+              deepseq-1.4.2.0 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: primitive-0.6.1.0
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.5.2.0 ghc-prim-0.5.0.0 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: vector-0.11.0.0
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+flags: -unsafechecks -internalchecks boundschecks
+dependencies: primitive-0.6.1.0 ghc-prim-0.5.0.0 deepseq-1.4.2.0
+              base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: ansi-terminal-0.6.2.3
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+flags: -example
+dependencies: unix-2.7.2.0 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: clock-0.7.2
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+flags: -llvm
+dependencies: base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cmdargs-0.10.14
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+flags: -testprog quotation
+dependencies: transformers-0.5.2.0 template-haskell-2.11.0.0
+              process-1.4.2.0 filepath-1.4.1.0 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cpphs-1.20.2
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: polyparse-1.12 old-time-1.1.0.3 old-locale-1.0.0.7
+              directory-1.2.6.2 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: extra-1.5
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: unix-2.7.2.0 time-1.6.0.1 process-1.4.2.0
+              filepath-1.4.1.0 directory-1.2.6.2 clock-0.7.2 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: hashable-1.2.4.0
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+flags: -sse41 sse2 integer-gmp
+dependencies: text-1.2.2.1 integer-gmp-1.0.0.1 ghc-prim-0.5.0.0
+              bytestring-0.10.8.1 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: haskell-src-exts-1.18.2
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: pretty-1.1.3.3 ghc-prim-0.5.0.0 cpphs-1.20.2
+              base-4.9.0.0 array-0.5.1.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: hlint-1.9.37
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+flags: threaded gpl
+dependencies: uniplate-1.6.12 transformers-0.5.2.0 refact-0.3.0.2
+              process-1.4.2.0 hscolour-1.24.1 haskell-src-exts-1.18.2
+              filepath-1.4.1.0 extra-1.5 directory-1.2.6.2 cpphs-1.20.2
+              containers-0.5.7.1 cmdargs-0.10.14 base-4.9.0.0
+              ansi-terminal-0.6.2.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: hscolour-1.24.1
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: containers-0.5.7.1 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: old-locale-1.0.0.7
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: old-time-1.1.0.3
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: old-locale-1.0.0.7 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: polyparse-1.12
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: text-1.2.2.1 bytestring-0.10.8.1 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: refact-0.3.0.2
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: syb-0.6
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+dependencies: base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: text-1.2.2.1
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+flags: -integer-simple -developer
+dependencies: integer-gmp-1.0.0.1 ghc-prim-0.5.0.0 deepseq-1.4.2.0
+              bytestring-0.10.8.1 binary-0.8.3.0 base-4.9.0.0 array-0.5.1.1
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: uniplate-1.6.12
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+flags: typeable_fingerprint separate_syb
+dependencies: unordered-containers-0.2.7.1 syb-0.6 hashable-1.2.4.0
+              containers-0.5.7.1 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: unordered-containers-0.2.7.1
+os: osx
+arch: x86_64
+compiler: ghc-8.0.1
+client: cabal-install-1.22.6.0
+flags: -debug
+dependencies: hashable-1.2.4.0 deepseq-1.4.2.0 base-4.9.0.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
